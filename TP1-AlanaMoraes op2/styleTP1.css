@@ -1,0 +1,363 @@
+:root {
+    --clr-primary:rgb(239, 239, 239);
+    --clr-secondary:rgb(141, 141, 141);
+    --ff-primary:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*+p, *+img, *+a, *+small, *+h1, *+h2, *+h3, *+h4, *+h5, *+h6 {
+    margin-top: 10px;
+}
+html {
+    font-family: var(--ff-primary);
+    line-height: 1.5625; 
+}
+h1, h2, h3, h4, h5, h6, button,li {
+    line-height: 1.25; 
+}
+h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--clr-secondary);
+    padding-bottom: 10px;
+}
+img {
+    background-color: rgba(0,0,0,.1);
+}
+section {
+    max-width: 100rem;
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding: 20px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.buttonStyle {
+    background-color: var(--clr-primary);
+    color: black;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* box-shadow by tailwindcss*/
+}
+.logo {
+    background-color: var(--clr-primary);  
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* box-shadow by tailwindcss*/;
+    padding: 15px;  
+    height: 3rem;
+}
+
+
+/*------------------------- ZOOM IN ----------------------- */
+ 
+/* img {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+img:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}  */
+
+
+/*----------------- Menu ------------------------*/
+
+nav>* {
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    margin-right: 60px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+nav div a {
+    margin-left: 10px;
+    background-color: transparent;
+}
+nav {
+    margin-top: 20px;
+}
+
+/*----------------- Header ------------------------*/
+
+header img {
+    width: 60%;
+    height: 25rem;
+    padding-right: 20px;
+}
+body header {
+    margin-top: 50px;
+}
+
+body header div h1 {
+    margin-bottom: 50px;
+}
+/* ------ Fiche Header------ */
+.bannerText p {
+    font-size: 12px;
+}
+
+
+/*----------------- Section 1 ------------------------*/
+
+section img {
+    width: 60%;
+    height: 25rem;
+}
+.section1 {
+    align-items: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.section1Portail img {
+    width: 100%;
+    margin-top: 50px;
+}
+.text {
+    position: absolute;
+    color:black;
+    text-align: center;
+    top: 350px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    font-size: 18px;
+}
+/* ------ Fiche Section 1------ */
+ul :first-child {
+    list-style: none;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+/*----------------- Section 2 ------------------------*/
+
+button{
+    width: 80%;
+    padding: 5px;
+    color: black;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* box-shadow by tailwindcss */
+}
+body section header {
+    margin-top: 50px;
+}
+section div article img {
+    width: 80%;
+    height: 15rem;
+}
+.section2 {
+    border-bottom: 2px solid var(--clr-secondary);
+    margin-top: 50px;
+    justify-content: space-around;
+}
+.flexArticle1 .flexArticle2 .flexArticle3 {
+    flex: 1;
+    padding: 15px;
+}
+.flexArticle3 p {
+    padding-bottom: 20px;
+}
+
+/* ------ Portail  Section 2------ */
+.card {
+    text-align: center;
+    font-size: 20px;
+}
+.section2Portail {
+    text-align: center;
+}
+.section2Portail p {
+    width: 100%;
+    font-size: 14px;
+}
+
+
+
+/*----------------- Section 3 ------------------------*/
+
+.section3 {
+    margin: 50px 0;
+}
+.section3 img {
+    margin-right: 50px;
+    width: 80%;
+    height: 25rem;
+}
+ul {
+    margin: 45px;
+}
+li {
+    margin: 20px;
+    font-size: 20px;
+}
+/* ------ Portail Section 3------ */
+
+.flex1 {
+    flex-direction: column;
+}
+
+
+/*----------------- Section 4 ------------------------*/
+
+.section4 {
+    justify-content: space-between;
+    border-top: 2px solid var(--clr-secondary);
+    border-bottom: 2px solid var(--clr-secondary);
+    padding: 50px 0;
+    font-size: 24px;
+
+}
+.section4Article1 {
+    flex: 1;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.section4Article2 {
+    flex: 1;
+    font-size: 20px;
+}
+.section4Article1 p {
+    margin: 20px 0;
+}
+.section4Article2 p {
+    margin: 47px 0;
+}
+/* ------ Portail Section 4 ------ */
+
+.bannerText {
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 70px 50px 50px 50px;
+    font-size: 24px;
+}
+.bannerText p {
+    margin: 50px 0;
+    font-size: 16px;
+}
+.section4Portail {
+    margin: 50px 0;
+}
+
+/*----------------- Section 5 ------------------------*/
+
+
+
+
+/* ------ Portail Section 5 ------ */
+
+
+.imgRound {
+    border-radius: 50%; 
+    width: 80%;
+    height: 50%;
+}
+.flex article {
+    flex: 1;
+    justify-content: space-between;
+    text-align: center;
+}
+.section5Portail {
+    align-items: center;
+    border-bottom: 2px solid var(--clr-secondary);
+}
+.section5Portail article {
+    padding: 50px 0;
+}
+.section5Portail h2 {
+    text-align: center;
+
+}
+
+
+
+
+/*----------------- Footer ------------------------*/
+
+footer {
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.column a {
+    text-decoration: none;
+    line-height: 1;
+    color: grey;
+}
+
+/*----------------- Responsive------------------------*/
+
+/* @media (max-width: 480px) and (max-width: 768px) and (max-width: 992px) and (max-width: 1200px){
+
+.wrapper{
+    padding: 15px;
+}
+.flex {
+    display: block;
+}
+header img {
+    width: 94%;
+    height: 25rem;
+}
+section img {
+    width: 100%;
+    height: 25rem;
+    align-items: center;
+}
+.section1 h1 {
+    text-align: center;
+}
+body header div {
+    margin-top: 10px;
+    text-align: center;
+}
+nav>* {
+    display: flex;
+    flex-direction: column;
+}
+.section3 img {
+    width: 100%;
+}
+.section4Article2 {
+    padding-left: 0;
+    padding-top: 50px;
+}
+.section4Article1 a {
+    font-size: 12px;
+}
+.section4Article2 a {
+    font-size: 12px;
+}
+body section div a {
+    font-size: 12px;
+}
+p, li {
+    font-size: 16px;
+}
+}; */
+
