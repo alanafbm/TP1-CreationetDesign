@@ -17,6 +17,9 @@ html {
 h1, h2, h3, h4, h5, h6, button,li {
     line-height: 1.25; 
 }
+p{
+    font-size: 14px;
+}
 h1 {
     font-size: 50px;
 }
@@ -28,9 +31,6 @@ h2 {
 }
 img {
     background-color: rgba(0,0,0,.1);
-}
-section {
-    max-width: 100rem;
 }
 .wrapper {
     margin-left: auto;
@@ -62,14 +62,14 @@ section {
 
 /*------------------------- ZOOM IN ----------------------- */
  
-/* img {
+.buttonStyle {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
-img:hover {
+.buttonStyle:hover {
     -webkit-transform:scale(1.1);
     transform:scale(1.1);
-}  */
+}  
 
 
 /*----------------- Menu ------------------------*/
@@ -295,9 +295,7 @@ section div article img {
 .section3 ul {
     margin: 45px 0;
 }
-.section3 h1 {
-    font-size: 60px;
-}
+
 /* ------ Portail Section 3------ */
 
 .flex1 {
@@ -355,9 +353,6 @@ section div article img {
 }
 
 /*----------------- Section 5 ------------------------*/
-
-
-
 
 /* ------ Portail Section 5 ------ */
 
