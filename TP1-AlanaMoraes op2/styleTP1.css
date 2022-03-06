@@ -17,10 +17,14 @@ html {
 h1, h2, h3, h4, h5, h6, button,li {
     line-height: 1.25; 
 }
+h1 {
+    font-size: 50px;
+}
 h2 {
     margin-bottom: 15px;
     border-bottom: 2px solid var(--clr-secondary);
     padding-bottom: 10px;
+    text-align: center;
 }
 img {
     background-color: rgba(0,0,0,.1);
@@ -95,7 +99,7 @@ nav {
 header img {
     width: 60%;
     height: 25rem;
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 body header {
     margin-top: 50px;
@@ -105,9 +109,12 @@ body header div h1 {
     margin-bottom: 50px;
 }
 /* ------ Fiche Header------ */
-.bannerText p {
-    font-size: 12px;
+
+.banner {
+    padding: 80px 25px;
+    text-align: center;
 }
+
 
 
 /*----------------- Section 1 ------------------------*/
@@ -121,26 +128,98 @@ section img {
     font-size: 20px;
     margin-top: 50px;
 }
+
+
+/* ------ Portail ---- */
+
 .section1Portail img {
     width: 100%;
+    height: 550px;
     margin-top: 50px;
 }
-.text {
+.section1Portail .text {
     position: absolute;
     color:black;
     text-align: center;
-    top: 350px;
+    top: 380px;
     width: 100%;
     right: 0;
     left: 0;
     font-size: 18px;
 }
 /* ------ Fiche Section 1------ */
+
 ul :first-child {
     list-style: none;
-    padding-right: 25px;
     font-weight: bold;
 }
+li {
+    list-style: none;
+}
+.section1Fiche {
+    flex-direction: row;
+    margin-top: 80px;
+    width: 100%;
+}
+.section1FicheArticle {
+    border: 1px solid var(--clr-secondary);
+    border-radius: 10px;
+    margin: 55px 85px;
+    padding: 10px;
+    width: 60%;    
+}
+.section1FicheArticle h4 {
+    border-bottom: 2px solid black;
+    padding: 15px;
+}
+.section1Fiche1 {
+    flex: 1;
+}
+.section1Fiche1 li {
+    padding: 25px 20px;
+}
+.section1Fiche2 {
+    flex-direction: column;
+    flex: 0.5;
+}
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.galerieImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galerieItem--1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;  
+}
+.galerieItem--2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+.galerieItem--3 {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 5;
+}
+.galerieItem--4 {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 3;
+}
+.galerieItem--5 {
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 3;
+}
+.galerieItem--6 {
+    grid-column: 5 / span 4;
+    grid-row: 6 / span 3;
+}
+
+
+
 
 /*----------------- Section 2 ------------------------*/
 
@@ -183,35 +262,50 @@ section div article img {
 }
 .section2Portail {
     text-align: center;
+    
 }
 .section2Portail p {
     width: 100%;
     font-size: 14px;
 }
+/* ------Fiche----- */
 
-
+.section2Fiche a {
+    margin-top: 60px;
+}
+.section2Fiche h1 {
+    margin-top: 60px;
+}
+.section2Fiche {
+    border-bottom: 2px solid var(--clr-secondary);
+    padding: 50px;
+}
 
 /*----------------- Section 3 ------------------------*/
 
 .section3 {
     margin: 50px 0;
+    align-items: center;
 }
 .section3 img {
     margin-right: 50px;
     width: 80%;
     height: 25rem;
 }
-ul {
-    margin: 45px;
+.section3 ul {
+    margin: 45px 0;
 }
-li {
-    margin: 20px;
-    font-size: 20px;
+.section3 h1 {
+    font-size: 60px;
 }
 /* ------ Portail Section 3------ */
 
 .flex1 {
     flex-direction: column;
+}
+.section3Portail h2 {
+    text-align: center;
+
 }
 
 
@@ -256,6 +350,8 @@ li {
 }
 .section4Portail {
     margin: 50px 0;
+    border-top: 2px solid var(--clr-secondary);
+    padding-top: 50px;
 }
 
 /*----------------- Section 5 ------------------------*/
@@ -288,9 +384,6 @@ li {
 
 }
 
-
-
-
 /*----------------- Footer ------------------------*/
 
 footer {
@@ -309,55 +402,4 @@ footer {
     line-height: 1;
     color: grey;
 }
-
-/*----------------- Responsive------------------------*/
-
-/* @media (max-width: 480px) and (max-width: 768px) and (max-width: 992px) and (max-width: 1200px){
-
-.wrapper{
-    padding: 15px;
-}
-.flex {
-    display: block;
-}
-header img {
-    width: 94%;
-    height: 25rem;
-}
-section img {
-    width: 100%;
-    height: 25rem;
-    align-items: center;
-}
-.section1 h1 {
-    text-align: center;
-}
-body header div {
-    margin-top: 10px;
-    text-align: center;
-}
-nav>* {
-    display: flex;
-    flex-direction: column;
-}
-.section3 img {
-    width: 100%;
-}
-.section4Article2 {
-    padding-left: 0;
-    padding-top: 50px;
-}
-.section4Article1 a {
-    font-size: 12px;
-}
-.section4Article2 a {
-    font-size: 12px;
-}
-body section div a {
-    font-size: 12px;
-}
-p, li {
-    font-size: 16px;
-}
-}; */
 
