@@ -27,7 +27,6 @@ h2 {
     margin-bottom: 15px;
     border-bottom: 2px solid var(--clr-secondary);
     padding-bottom: 10px;
-    text-align: center;
 }
 img {
     background-color: rgba(0,0,0,.1);
@@ -50,13 +49,18 @@ img {
     text-decoration: none;
     padding: 10px;
     font-size: 14px;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* box-shadow by tailwindcss*/
 }
 .logo {
     background-color: var(--clr-primary);  
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* box-shadow by tailwindcss*/;
-    padding: 15px;  
+    padding: 25px 35px 0px 25px;  
     height: 3rem;
+    margin-right: 45px;
+    
+}
+.logo a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
 }
 
 
@@ -77,7 +81,7 @@ img {
 nav>* {
     display: inline-block;
 }
-nav a {
+.menu a {
     text-decoration: none;
     color: black;
     height: 100%;
@@ -112,7 +116,7 @@ body header div h1 {
 
 .banner {
     padding: 80px 25px;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -233,7 +237,7 @@ button{
     border: none;
     font-size: 16px;
     font-weight: bold;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* box-shadow by tailwindcss */
+     
 }
 body section header {
     margin-top: 50px;
@@ -254,8 +258,12 @@ section div article img {
 .flexArticle3 p {
     padding-bottom: 20px;
 }
+ section .centre h2 {
+    text-align: center;
+}
 
 /* ------ Portail  Section 2------ */
+
 .card {
     text-align: center;
     font-size: 20px;
@@ -268,6 +276,7 @@ section div article img {
     width: 100%;
     font-size: 14px;
 }
+
 /* ------Fiche----- */
 
 .section2Fiche a {
@@ -337,13 +346,11 @@ section div article img {
 .bannerText {
     width: 30%;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 70px 50px 50px 50px;
+    padding: 70px 50px 50px 0px;
     font-size: 24px;
 }
 .bannerText p {
-    margin: 50px 0;
+    margin: 25px 0;
     font-size: 16px;
 }
 .section4Portail {

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\PetitsFruits"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TP1"
+	}
+}
